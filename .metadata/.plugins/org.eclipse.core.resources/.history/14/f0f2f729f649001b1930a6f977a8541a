@@ -1,0 +1,29 @@
+package com.devesuperior.hrworker.resource;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.devesuperior.hrworker.entities.Worker;
+import com.devesuperior.hrworker.repository.WorkerRepository;
+
+@RestController
+@RequestMapping(value = "/workers")
+public class WorkerResource {
+
+	
+	@Autowired
+	private WorkerRepository repository;
+	
+	
+	
+	public ResponseEntity<List<Worker>> findAll(){
+		
+	}
+	
+	
+	
+}

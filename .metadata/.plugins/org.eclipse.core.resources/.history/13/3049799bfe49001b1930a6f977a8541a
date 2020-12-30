@@ -1,0 +1,7 @@
+package com.devesuperior.hrpayroll.entities;
+
+import java.io.Serializable;
+
+public class Payment implements Serializable {
+
+}

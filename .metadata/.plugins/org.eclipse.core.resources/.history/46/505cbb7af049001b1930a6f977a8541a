@@ -1,0 +1,5 @@
+package com.devesuperior.hrworker.entities;
+
+public class Worker {
+
+}

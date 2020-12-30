@@ -1,0 +1,5 @@
+spring.application.name=hr-worker
+server.port=8765
+
+#servidor eureka
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka

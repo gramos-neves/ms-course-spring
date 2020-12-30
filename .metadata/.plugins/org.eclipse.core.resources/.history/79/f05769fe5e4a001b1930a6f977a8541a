@@ -1,0 +1,25 @@
+spring.application.name=hr-worker
+#server.port=8001
+
+server.port=${PORT:0}
+
+
+#servidor eureka
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+
+eureka.instance.instance-id=${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=60000
+ribbon.ConnectTimeout=10000
+ribbon.ReadTimeout=20000
+
+
+# Database configuration
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.username=sa
+spring.datasource.password=
+
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+

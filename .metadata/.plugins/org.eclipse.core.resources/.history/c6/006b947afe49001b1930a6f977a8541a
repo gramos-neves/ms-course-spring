@@ -1,0 +1,5 @@
+package com.devesuperior.hrpayroll.entities;
+
+public class Payment {
+
+}

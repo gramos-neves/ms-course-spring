@@ -1,0 +1,18 @@
+package com.devesuperior.hrpayroll.resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.devesuperior.hrpayroll.service.PaymentService;
+
+@RestController
+@RequestMapping(name = "/payments")
+public class PaymentResource {
+
+	@Autowired
+	private PaymentService service;
+	
+	
+	
+}
